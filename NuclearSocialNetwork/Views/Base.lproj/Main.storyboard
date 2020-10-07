@@ -176,7 +176,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="MyFriends" largeTitleDisplayMode="always" id="bE5-F1-CGj">
                         <barButtonItem key="backBarButtonItem" title="My Friends" id="yZU-dE-qNf"/>
-                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="AuA-kl-NlM"/>
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="AuA-kl-NlM">
+                            <connections>
+                                <action selector="logButtonPressed:" destination="5ap-AT-ddo" id="7f1-GC-TFY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Skk-B2-SFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

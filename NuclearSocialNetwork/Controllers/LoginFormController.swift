@@ -13,6 +13,9 @@ class LoginFormController: UIViewController {
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     
+   
+    
+    
     @objc func keyboardWasShown(notification: Notification){
         //получаем размер клавиатуры
         let info = notification.userInfo! as NSDictionary
@@ -103,3 +106,5 @@ class LoginFormController: UIViewController {
         }
     }
 }
+
+

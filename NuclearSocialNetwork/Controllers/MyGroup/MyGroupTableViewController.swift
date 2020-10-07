@@ -90,6 +90,7 @@ class MyGroupTableViewController: UITableViewController {
     
     @IBAction func addGroup(segue: UIStoryboardSegue){
         
+        //рабочий вариант , но с сигвеем
         // проверяем идентификатор перехода
         if segue.identifier == K.Segue.idUnwindAddGroup {
             // получаем ссылку на контроллер с которого осуществлен переход
@@ -105,6 +106,7 @@ class MyGroupTableViewController: UITableViewController {
                     // теперь обновляем таблицу
                     tableView.reloadData()
                     
+                    //   это без сегвея , но я не знаю как тут получить indexPath
                     //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     //        guard let secondViewController = storyboard.instantiateViewController(identifier: K.Controller.idAllGroupTVC) as? AllGroupTableViewController else { return }
                     //

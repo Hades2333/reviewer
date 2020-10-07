@@ -59,4 +59,18 @@ class MyFriendsTableViewController: UITableViewController {
         // показываем контроллер
         show(secondViewController, sender: nil)
     }
+    
+    
+    
+    
+    
+    @IBAction func logButtonPressed(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
 }
+    
+}
+    
+    
+    
+    
+

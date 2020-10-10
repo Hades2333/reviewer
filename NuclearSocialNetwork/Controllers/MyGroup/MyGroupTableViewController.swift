@@ -126,4 +126,9 @@ class MyGroupTableViewController: UITableViewController {
             }
         }
     }
+    
+    
+    @IBAction func logOutButtonPressed(_ sender: UIBarButtonItem) {
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
 }

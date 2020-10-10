@@ -27,6 +27,11 @@
 		14B4D63A2525E06000186787 /* FriendsImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D6392525E06000186787 /* FriendsImagesCollectionViewController.swift */; };
 		14B4D63E2525E09500186787 /* FriendsImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D63C2525E09500186787 /* FriendsImagesCollectionViewCell.swift */; };
 		14B4D6422525E0B700186787 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D6412525E0B700186787 /* Constants.swift */; };
+		14C2C653252F0D5D003A3349 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C2C652252F0D5D003A3349 /* AvatarView.swift */; };
+		14DAE2D8252F4EA10034C0B6 /* LibreBaskerville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14DAE2D5252F4EA10034C0B6 /* LibreBaskerville-Regular.ttf */; };
+		14DAE2D9252F4EA10034C0B6 /* LibreBaskerville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14DAE2D6252F4EA10034C0B6 /* LibreBaskerville-Italic.ttf */; };
+		14DAE2DA252F4EA10034C0B6 /* LibreBaskerville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14DAE2D7252F4EA10034C0B6 /* LibreBaskerville-Bold.ttf */; };
+		14DAE2E3252F56790034C0B6 /* LDGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DAE2E2252F56790034C0B6 /* LDGradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,11 @@
 		14B4D6392525E06000186787 /* FriendsImagesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsImagesCollectionViewController.swift; sourceTree = "<group>"; };
 		14B4D63C2525E09500186787 /* FriendsImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsImagesCollectionViewCell.swift; sourceTree = "<group>"; };
 		14B4D6412525E0B700186787 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		14C2C652252F0D5D003A3349 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		14DAE2D5252F4EA10034C0B6 /* LibreBaskerville-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LibreBaskerville-Regular.ttf"; path = "media/fonts/LibreBaskerville-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		14DAE2D6252F4EA10034C0B6 /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LibreBaskerville-Italic.ttf"; path = "media/fonts/LibreBaskerville-Italic.ttf"; sourceTree = SOURCE_ROOT; };
+		14DAE2D7252F4EA10034C0B6 /* LibreBaskerville-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LibreBaskerville-Bold.ttf"; path = "media/fonts/LibreBaskerville-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		14DAE2E2252F56790034C0B6 /* LDGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDGradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,9 +129,11 @@
 		1471C5912522262500A3FF7F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				14DAE2D4252F4E880034C0B6 /* Fonts */,
 				14B4D6412525E0B700186787 /* Constants.swift */,
-				1429AD1F2529D22000B2E0F7 /* UserStruct.swift */,
-				1429AD222529D23400B2E0F7 /* GroupStruct.swift */,
+				14DAE2DC252F55450034C0B6 /* MyStructs */,
+				14C2C652252F0D5D003A3349 /* AvatarView.swift */,
+				14DAE2E2252F56790034C0B6 /* LDGradientView.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,6 +175,25 @@
 				14B4D63C2525E09500186787 /* FriendsImagesCollectionViewCell.swift */,
 			);
 			path = FriendsImages;
+			sourceTree = "<group>";
+		};
+		14DAE2D4252F4E880034C0B6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				14DAE2D7252F4EA10034C0B6 /* LibreBaskerville-Bold.ttf */,
+				14DAE2D6252F4EA10034C0B6 /* LibreBaskerville-Italic.ttf */,
+				14DAE2D5252F4EA10034C0B6 /* LibreBaskerville-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		14DAE2DC252F55450034C0B6 /* MyStructs */ = {
+			isa = PBXGroup;
+			children = (
+				1429AD1F2529D22000B2E0F7 /* UserStruct.swift */,
+				1429AD222529D23400B2E0F7 /* GroupStruct.swift */,
+			);
+			path = MyStructs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +254,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				14373943251FAEC500976D0B /* LaunchScreen.storyboard in Resources */,
+				14DAE2D8252F4EA10034C0B6 /* LibreBaskerville-Regular.ttf in Resources */,
 				14B4D62C2525DF9800186787 /* AllGroupTableViewCell.xib in Resources */,
 				14373940251FAEC500976D0B /* Assets.xcassets in Resources */,
+				14DAE2D9252F4EA10034C0B6 /* LibreBaskerville-Italic.ttf in Resources */,
+				14DAE2DA252F4EA10034C0B6 /* LibreBaskerville-Bold.ttf in Resources */,
 				1437393E251FAEC400976D0B /* Main.storyboard in Resources */,
 				14B4D6222525DF1300186787 /* MyGroupTableViewCell.xib in Resources */,
 				14B4D6362525E03800186787 /* MyFriendsTableViewCell.xib in Resources */,
@@ -245,12 +279,14 @@
 				14B4D6212525DF1300186787 /* MyGroupTableViewCell.swift in Sources */,
 				14B4D63E2525E09500186787 /* FriendsImagesCollectionViewCell.swift in Sources */,
 				1429AD232529D23400B2E0F7 /* GroupStruct.swift in Sources */,
+				14DAE2E3252F56790034C0B6 /* LDGradientView.swift in Sources */,
 				14B4D6352525E03800186787 /* MyFriendsTableViewCell.swift in Sources */,
 				14B4D6422525E0B700186787 /* Constants.swift in Sources */,
 				14B4D61D2525DD1B00186787 /* MyGroupTableViewController.swift in Sources */,
 				14B4D6262525DF7F00186787 /* AllGroupTableViewController.swift in Sources */,
 				14B4D63A2525E06000186787 /* FriendsImagesCollectionViewController.swift in Sources */,
 				14B4D62B2525DF9800186787 /* AllGroupTableViewCell.swift in Sources */,
+				14C2C653252F0D5D003A3349 /* AvatarView.swift in Sources */,
 				14B4D6312525DFF900186787 /* MyFriendsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

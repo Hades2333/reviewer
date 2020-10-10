@@ -60,12 +60,8 @@ class MyFriendsTableViewController: UITableViewController {
         show(secondViewController, sender: nil)
     }
     
-    
-    
-    
-    
-    @IBAction func logButtonPressed(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
+    @IBAction func logButtonPressed(_ sender: UIBarButtonItem) {
+        self.navigationController?.dismiss(animated: true, completion: nil)
 }
     
 }
